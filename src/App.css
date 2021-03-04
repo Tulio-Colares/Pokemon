@@ -36,6 +36,11 @@ body {
   div.Info p {
     margin: 3px 0;
   }
+
+  .sexy img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (max-width: 534px) {
