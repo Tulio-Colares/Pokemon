@@ -1,0 +1,195 @@
+body {
+  background-color: brown;
+  background-image: url('./components/PokeBG.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 8%;
+  display: flex;
+  justify-content: center;
+}
+
+.general-container {
+  border-left: 30px solid white;
+  border-right: 30px solid white;
+  display: flex;
+  margin: auto;
+  flex-basis: 1400px;
+  flex-shrink: 1;
+  flex-grow: 0;
+  background-color: white;
+}
+
+@media (min-width: 1439px) {
+  .general-container {
+    width: 1400px;
+  }
+}
+  @media (max-width: 1439px) {
+  .Header .Link, .Footer span {
+    border: 1px solid white;
+  }
+
+  .Table img {
+    margin-bottom: 5px;
+  }
+
+  div.Info p {
+    margin: 3px 0;
+  }
+}
+
+@media (max-width: 534px) {
+  .separador {
+    display: none;
+  }
+}
+
+/* Header & Footer */
+
+.Footer, .Header {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgb(211, 30, 30);
+  color: white;
+  min-height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.Footer span {
+  text-align: center;
+  justify-content: center;
+  min-width: 300px;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+
+.Header .Link {
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-basis: 300px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.Footer a {
+  text-decoration: none;
+  color: white;
+}
+
+Link {
+  border: 1px solid white;
+  flex-basis: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+/* pokedex */
+
+.pokedex-container {
+  border: 20px solid brown;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-basis: 100%;
+  flex-shrink: 1;
+  justify-content: center;
+  background-color: brown;
+}
+
+.logo-container {
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 1;
+  border-top-right-radius:10px;
+  border-top-left-radius:10px;
+}
+
+.pokeLogo {
+  position: relative;
+}
+
+.Table {
+  background-color: brown;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.imagem {
+  background-color: white;
+  border-radius: 10px;
+  float: left;
+  padding: 10px;
+} 
+
+.separador {
+  background-color: brown;
+  width: 30px;
+}
+
+.Info {
+  background-color: brown;
+  display: flex;
+  min-width: 250px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Info p {
+  border-radius: 5px;
+  background-color: white;
+  padding: 0 25px 0 25px;
+  margin: 0;
+} 
+
+/* pokeList */
+
+.poke-container {
+  background-color: brown;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.poke-card {
+  border: 5px solid brown;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  width: 300px;
+  height: 300px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 250px;
+}
+
+.index {
+  position: relative;
+  float: left;
+  left: 6px;
+  margin-right: -100px;
+  margin-top: -30px;
+}
+
+.poke-card img {
+  height: 120px;
+}
+
+.poke-card div {
+  -moz-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+}

@@ -1,0 +1,2 @@
+Aqui coloco a função pokedex dentro de um if/else statement, para que, quando não haja nenhum pokemon 
+sendo buscado, ou foi buscado um pokemon pelo nome errado, o espaço da pokedex fique vazio.
