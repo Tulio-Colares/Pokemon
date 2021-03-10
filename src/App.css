@@ -62,7 +62,7 @@ body {
   flex-direction: row;
 }
 
-.Footer span {
+.Footer .nav {
   text-align: center;
   justify-content: center;
   min-width: 300px;
@@ -75,7 +75,6 @@ body {
 .Header .Link {
   flex-direction: column;
   justify-content: center;
-  text-decoration: none;
   color: white;
   display: flex;
   flex-basis: 300px;
@@ -83,19 +82,22 @@ body {
   text-align: center;
 }
 
-.Footer a {
+a {
   text-decoration: none;
   color: white;
 }
 
-Link {
-  border: 1px solid white;
-  flex-basis: 100%;
-  flex-grow: 0;
-  flex-shrink: 0;
+.Link :hover {
+  text-decoration: none;
+  color: white;
+  text-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 /* pokedex */
+
+.form-label {
+  margin-top: 10px;
+}
 
 .pokedex-container {
   border: 20px solid brown;

@@ -23,8 +23,8 @@ const Pokedex = () => {
     setPokeId(res.data.id);
     setPokeOrder(res.data.order);
     setPokePhoto(res.data.sprites.other.dream_world.front_default)
-    setPokeHeight(res.data.height);
-    setPokeweight(res.data.weight);
+    setPokeHeight(Math.round((res.data.height * 0.108084 + 0.00001) * 100) / 100);
+    setPokeweight( Math.round((res.data.weight * 0.100462 + 0.00001) * 100) / 100);
     setPokeType(res.data.types[0].type.name);
   }), [pokemon]);
 
@@ -43,8 +43,8 @@ const Pokedex = () => {
             <p>Nome: {pokeName.toLowerCase().split(' ').map(
           letra => letra.charAt(0).toUpperCase() + letra.substring(1)).join(' ')}</p>
             <p>Ordem: {pokeOrder}</p> 
-            <p>Altura: {pokeHeight}</p> 
-            <p>Peso: {pokeWeight}</p>  
+            <p>Altura: {pokeHeight} m</p> 
+            <p>Peso: {pokeWeight} kg</p>  
             <p>Tipo: {pokeType}</p>  
           </div>  
         </div>

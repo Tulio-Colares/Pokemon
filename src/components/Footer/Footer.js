@@ -1,11 +1,18 @@
-import React from 'react'
+import React from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 export default function Footer() {
   return (
     <div className="Footer">
-      <span>Footer</span>
-      <span><a href="https://tulio-portfolio.herokuapp.com/">Tulio Colares</a></span>
-      <span>@2021</span>
+      <div className='nav'>
+        <span className="Link"><AnchorLink href='#frente' offset='20px'>TOPO</AnchorLink></span>
+      </div>
+      <div className='nav'>
+        <span className="Link"><a href="https://tulio-portfolio.netlify.app/">Tulio Colares</a></span>
+      </div>
+      <div className='nav'>
+        <span className="Link">@2021</span>
+      </div>
     </div>
   )
 }

@@ -19,7 +19,7 @@ export default class SearchBar extends Component {
     return (
       <Form onSubmit={this.onFormSubmit}>
         <Form.Group controlId="formBasicEmail">
-        <Form.Label>Pokemon Search:</Form.Label>
+        <Form.Label>Pesquisa Pokemon:</Form.Label>
         <Form.Control 
           type="text" 
           value={this.state.term} 
